@@ -1,0 +1,520 @@
+:root {
+    --verde-fuerte: #76A713;
+    --morado: #241528
+}
+
+button:hover,
+input[type=submit] {
+    transition: all .5s;
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'roboto';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+    font-size: 40px;
+    font-family: 'oswald';
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'roboto';
+    font-size: 16px;
+    position: relative;
+}
+
+.menu-bar .menu-contact,
+.menu-bar .menu-media,
+.lang {
+    display: flex;
+    font-size: 13px;
+}
+
+
+
+.lang div span:hover {
+    transform: translateY(-10px);
+    color: var(--verde-fuerte);
+    cursor: pointer;
+    transition: all .4;
+}
+
+.lang div span.active {
+    color: var(--verde-fuerte) !important;
+    font-weight: 700;
+}
+
+.menu-bar {
+    padding: 10px 0;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-bar .menu-contact>div,
+.menu-bar .menu-media>div {
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    gap: 7px;
+
+}
+
+.menu-bar .menu-media>div {
+    gap: 15px;
+}
+
+.menu-bar i,
+.lang i {
+    color: var(--verde-fuerte);
+}
+
+
+.navbar .logo-container {
+    width: 100%;
+    background-color: var(--morado);
+    height: 80px;
+    display: flex;
+}
+
+.navbar .logo-container img {
+    object-fit: cover;
+    width: 149px;
+    margin: auto;
+}
+
+.navbar nav {
+    height: 50px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 375px;
+    margin: auto;
+}
+
+.navbar nav a:hover {
+    color: var(--verde-fuerte);
+}
+
+/*only in nosotros and about*/
+.tittle {
+    display: flex;
+    height: 240px;
+}
+
+.tittle .container {
+    margin: auto;
+    font-weight: 500;
+    font-family: 'oswald';
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tittle .container h3 {
+    font-size: 40px;
+}
+
+.tittle .container .second-tittle span:last-child {
+    color: var(--verde-fuerte);
+    margin-left: 15px;
+    position: relative;
+}
+
+
+.tittle .container .second-tittle span:last-child:before {
+    content: '';
+    width: 2px;
+    height: 15px;
+    background-color: #000;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+}
+
+
+.suscribe {
+    background-color: var(--verde-fuerte);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.suscribe img {
+    display: block;
+    object-fit: cover;
+    width: 335px;
+    margin-top: -120px;
+    z-index: 9;
+
+}
+
+
+.suscribe h6 {
+    font-size: 50px;
+    font-family: 'oswald';
+    text-align: center;
+    color: #fff;
+    padding: 0 10px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.suscribe form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+
+.suscribe input[type=text] {
+    all: unset;
+    background-color: transparent;
+    height: 38px;
+    border: none;
+    border-bottom: 1px solid var(--morado);
+    color: #fff;
+}
+
+.suscribe input[type=submit] {
+    margin: 20px auto;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    background-color: #FF6600;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+#arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+footer {
+    background-color: var(--morado);
+    padding: 30px 20px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .container .logo p {
+    padding: 20px 0;
+    color: #CCCCCC;
+    font-weight: 300;
+}
+
+footer .container .logo .social-media a {
+    margin: 0 10px;
+}
+
+footer .container .logo .social-media i:hover {
+    color: var(--verde-fuerte);
+    transform: translateY(-1px);
+}
+
+footer .container .logo .social-media a i {
+    color: #CCCCCC;
+}
+
+footer .container .quick-links {
+    padding: 20px 0;
+}
+
+footer .container .quick-links span {
+    font-size: 24px;
+    font-family: 'oswald';
+    font-weight: 500;
+    color: #CCCCCC;
+}
+
+footer .container .quick-links ul {
+    padding: 20px;
+}
+
+footer .container .quick-links ul li {
+    color: #76A713;
+    padding: 7px 0;
+}
+
+footer .container .quick-links ul li a {
+    color: #CCCCCC;
+}
+
+footer .container .quick-links ul li a:hover {
+    color: var(--verde-fuerte);
+}
+
+footer .container .info div {
+    padding: 7px;
+}
+
+
+footer .container .info i {
+    color: #76A713;
+    margin-right: 5px;
+}
+
+
+footer .container .info span {
+    color: #CCCCCC;
+}
+
+
+
+footer .container .copy {
+    margin-top: 30px;
+    text-align: center;
+    color: #CCCCCC;
+    padding-top: 7px;
+    border-top: 1px solid #CCCCCC;
+}
+
+footer .container .copy {
+    width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+    #arrow {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+    }
+
+    .menu-bar {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 40px;
+    }
+
+    .menu-bar .menu-contact,
+    .menu-bar .menu-media {
+        width: 48%;
+
+    }
+
+
+    footer .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .container .logo img {
+        display: block;
+        object-fit: cover;
+        width: 150px;
+    }
+
+    footer .container .logo,
+    footer .container .quick-links,
+    footer .container .info {
+        width: 32%;
+        padding: 20px;
+
+    }
+
+    footer .container .quick-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container .info {
+        align-items: flex-start;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1023px) {
+
+    h6,
+    h5,
+    h4,
+    h3,
+    h2,
+    h1 {
+        font-size: 47px;
+    }
+
+    .menu-bar .menu-contact>div {
+        justify-content: flex-start;
+    }
+
+    .menu-bar .menu-media>div {
+        justify-content: flex-end;
+    }
+
+
+    .menu-bar {
+        max-width: 1140px;
+        justify-content: space-between;
+        margin: auto
+    }
+
+    .menu-bar .menu-contact {
+        width: 320px;
+    }
+
+    .menu-bar .menu-media {
+        width: 250px;
+    }
+
+
+    .navbar-container {
+        padding: 0 50px 0 60px;
+        background-color: var(--morado);
+    }
+
+    .navbar {
+        display: flex;
+        max-width: 1170px;
+        justify-content: space-between;
+        margin: auto;
+
+    }
+
+    .navbar nav {
+        margin: 0;
+        height: auto;
+        width: auto;
+        padding: 0;
+
+    }
+
+    .navbar nav a {
+        color: #fff;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        margin-left: 20px;
+    }
+
+    .navbar nav a:hover {
+        transform: translateY(-1px);
+    }
+
+    .navbar .logo-container {
+        width: 150px;
+    }
+
+    .navbar .logo-container img {
+        margin: auto;
+    }
+
+    .tittle .container {
+        flex-direction: row;
+        width: 90%;
+        max-width: 1170px;
+    }
+
+    .tittle .container h3 {
+        font-size: 50px;
+    }
+
+    .suscribe {
+        flex-direction: row;
+        padding-left: 40px;
+        padding-right: 20px;
+        max-width: 1170px;
+        margin: auto;
+    }
+
+
+    .suscribe h6 {
+        padding: 0;
+        width: 100%;
+    }
+
+    .suscribe form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .suscribe input[type=text] {
+        width: 60%;
+    }
+
+
+
+    #arrow {
+        left: 35%;
+    }
+
+    .suscribe {
+        justify-content: space-between;
+    }
+
+    .suscribe h6 {
+        text-align: left;
+    }
+
+    .suscribe form {
+        width: 650px;
+    }
+
+
+    footer .container {
+        max-width: 1170px;
+
+        margin: auto;
+        margin-top: 120px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .navbar-container {
+        padding: 0;
+    }
+
+
+
+    .suscribe {
+        transform: translateY(50%);
+    }
+
+}

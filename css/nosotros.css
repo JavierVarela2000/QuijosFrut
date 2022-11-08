@@ -1,0 +1,343 @@
+.about-grid button {
+    width: 200px;
+}
+
+.suscribe {
+    margin-top: 100px;
+}
+
+
+
+
+.about .container {
+    width: 100%;
+}
+
+.about .img {
+    background-color: var(--morado);
+    padding: 0 5% 10% 5%;
+}
+
+
+.about .img img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.about .we {
+    padding: 5%;
+}
+
+.about .we h3 {
+    text-align: left;
+    margin: 25px 0;
+    line-height: 1.4;
+    width: 100%;
+}
+
+.about .we p {
+    margin: 40px 0;
+    color: #888888;
+    line-height: 1.5;
+}
+
+
+.about .we .iconos .about-icon-1 img,
+.about .we .iconos .about-icon-2 img {
+    margin-right: 10px;
+}
+
+.about .we .iconos .about-icon-1 h4,
+.about .we .iconos .about-icon-2 span {
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'oswald';
+    font-weight: normal;
+    text-align: left;
+    transform: translateY(-10px);
+}
+
+
+.about .we .iconos .about-icon-2 img {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.def {
+    padding: 5%;
+    background-color: #F8F8F8;
+}
+
+.def .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: auto;
+    justify-content: center;
+    padding: 30px 0 10px 0;
+}
+
+.def .card {
+    width: 100%;
+    max-width: 370px;
+    background-color: #fff;
+    padding: 55px 0;
+    margin-bottom: 30px;
+    border: 1px solid #DDDDDD;
+}
+
+.def .card .img {
+    margin-bottom: 30px;
+}
+
+.def .card .img img {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+}
+
+.def .card .card-tittle {
+    display: block;
+    font-size: 25px;
+    font-family: 'oswald';
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.def .card p {
+    color: #888888;
+    text-align: center;
+    padding: 0 50px;
+    line-height: 1.5;
+}
+
+.mision .container,
+.vision .container {
+    padding: 5%;
+}
+
+
+
+.mision .img {
+    background-image: url('../img/mision.jpg');
+}
+
+.mision .img::before,
+.vision .img::after {
+    content: '';
+    width: 260px;
+    height: 490px;
+    position: absolute;
+    top: 0px;
+    background-color: var(--morado);
+    z-index: -1;
+    left: -9vw;
+}
+
+.vision .img::after {
+    background-color: var(--verde-fuerte);
+}
+
+.mision .img,
+.vision .img {
+    width: 90%;
+    max-width: 325px;
+    max-height: 435px;
+    height: 120vw;
+    background-size: cover;
+    position: relative;
+
+    background-position: center;
+    margin: 70px auto;
+}
+
+.mision .texto,
+.vision .texto {
+    border: 1px solid #DDDDDD;
+    background-color: #fff;
+    position: relative;
+}
+
+.mision .texto span,
+.vision .texto span {
+    font-family: 'oswald';
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    padding: 40px 0;
+}
+
+.mision .texto p,
+.vision .texto p {
+    color: #AAAAAA;
+    text-align: center;
+    padding: 0px 50px 50px 50px;
+    line-height: 1.5;
+    max-width: 375px;
+}
+
+.mision .texto::after,
+.vision .texto::after {
+    content: '';
+    width: 268px;
+    height: 480px;
+    position: absolute;
+    background-color: var(--verde-fuerte);
+    z-index: -1;
+    top: -1px;
+    right: -5vw;
+}
+
+.vision .texto::after {
+    height: 630px;
+    background-color: var(--morado);
+}
+
+
+.vision .img {
+    background-image: url('../img/vision.jpg');
+    margin-top: 35px;
+}
+
+
+.suscribe {
+    margin-top: 270px;
+}
+
+@media screen and (min-width: 767px) {
+    .about .img {
+        padding: 0 10% 15% 10%;
+    }
+
+    .about .we {
+        padding: 10%;
+    }
+
+    .about .we h3 {
+        font-size: 47px;
+    }
+
+    .about .we .iconos {
+        display: flex;
+    }
+
+    .about .we .iconos .about-icon-2 img {
+        margin-top: 0;
+    }
+
+    .about .we .iconos .about-icon-1 {
+        margin-right: 75px;
+    }
+
+    .mision .texto,
+    .vision .texto {
+        margin-top: 20px;
+        max-height: 450px;
+    }
+
+    .mision .container,
+    .vision .container {
+        display: flex;
+    }
+
+    .mision .container .img,
+    .vision .container .img {
+        margin-top: 0px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .def .container {
+        justify-content: space-evenly
+    }
+
+
+    .mision .container,
+    .vision .container {
+        margin: 10%;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    .about .container {
+        display: flex;
+        max-width: 1170px;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .about .img {
+        padding: 0 0 0 130px;
+        height: 500px;
+    }
+
+    .about .img img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .about .we {
+        padding: 0;
+        width: 572px;
+    }
+
+    .about .we h3 {
+        margin-top: 0;
+    }
+
+    .about .we p {
+        margin: 50px 0;
+    }
+
+    .def .container {
+        justify-content: space-between;
+        padding: 40px 0 10px 0;
+
+    }
+
+    .mision .img::before,
+    .vision .img::after {
+        left: 0;
+    }
+
+    .mision .container,
+    .vision .container {
+        margin: auto;
+        padding: 0;
+        max-width: 1170px;
+    }
+
+    .vision .container {
+        margin-top: 100px;
+    }
+
+
+
+
+    .mision .img,
+    .vision .img {
+        margin: 0;
+        max-width: 650px;
+    }
+
+    .mision .texto,
+    .vision .texto {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .vision .texto {
+        max-height: 600px;
+    }
+
+    .vison .container {
+        justify-content: flex-end;
+    }
+
+
+}
